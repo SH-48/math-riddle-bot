@@ -157,7 +157,8 @@ with cols[2]:
         else:
             st.session_state.started = False
             st.session_state.show_feedback = False
-        st.experimental_rerun()
+        st.rerun()
+
 
 # ---- Feedback ----
 if st.session_state.show_feedback:
